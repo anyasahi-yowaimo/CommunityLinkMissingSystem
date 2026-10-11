@@ -2,8 +2,7 @@
 # LinkMissing
 
 A local, evidence-first collaboration discovery prototype for student communities. It uses Python/FastAPI, SQLAlchemy, SQLite by default, NetworkX, and a browser frontend built with plain HTML/CSS/JavaScript. No React, TypeScript, Node build, JDK, XAMPP, paid AI API, or Docker is required to run the local demo.
-
-**Synthetic-data warning:** all seeded clubs, profiles, needs, and partnerships are fictional. Ranking scores are not probabilities of success. This is a hackathon MVP, not production-secure software.
+#NOTE: This is the base prototype working demo for the understanding of the Problem statement with the base demo database. The complete prototype system is ongoing working progress.
 
 ## Windows quick start
 
