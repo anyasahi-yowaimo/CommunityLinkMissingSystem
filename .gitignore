@@ -4,7 +4,7 @@
 .venv/
 venv/
 __pycache__/
-*.py[cod]
+*.pyc
 node_modules/
 dist/
 build/
@@ -13,3 +13,4 @@ coverage/
 .pytest_cache/
 .DS_Store
 Thumbs.db
+linkmissing.db
