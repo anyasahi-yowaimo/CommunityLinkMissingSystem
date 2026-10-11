@@ -1,3 +1,4 @@
+
 # LinkMissing
 
 A local, evidence-first collaboration discovery prototype for student communities. It uses Python/FastAPI, SQLAlchemy, SQLite by default, NetworkX, and a browser frontend built with plain HTML/CSS/JavaScript. No React, TypeScript, Node build, JDK, XAMPP, paid AI API, or Docker is required to run the local demo.
@@ -61,3 +62,5 @@ python -m evaluation.benchmark.run_benchmark
 - Profile permissions and availability are demo fields and should be coordinator-verified in a real pilot.
 
 See `docs/architecture.md`, `docs/api.md`, `docs/demo_script.md`, and `evaluation/README.md`.
+# LinkMissingSystem
+This is the AI-powered student connection and community discovery platform.
