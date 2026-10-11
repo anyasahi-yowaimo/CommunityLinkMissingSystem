@@ -44,6 +44,7 @@ python -m evaluation.benchmark.run_benchmark
 ```
 
 ## Features in this build
+- This is the base prototype for the Problem statement, just for the understanding of the prototype working.
 
 - Persistent club and need records in SQLite.
 - Database-backed recommendation generation with hard checks for active status, willingness, schedule, workload, verified skills, resource permission, and duplicate recorded scope.
@@ -55,7 +56,7 @@ python -m evaluation.benchmark.run_benchmark
 ## Important limitations
 
 - SQLite is the local default. PostgreSQL deployment is a documented next step; Docker Compose is supplied but was not verified in this environment.
-- This prototype has no real identity provider or production RBAC. Do not expose it to the public internet or store sensitive data.
+- This prototype has no real identity provider or production RBAC.
 - No three-club recommendation generator, full collaboration lifecycle UI, user accounts, Alembic revision history, or full fixed-label benchmark is claimed as complete.
 - The current benchmark is a smoke run and intentionally does not invent Precision@5 or Recall@5 without a frozen, complete ground-truth set.
 - The recommendation model is a deterministic baseline, not a trained ML model. No external AI service is needed.
