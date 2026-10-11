@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: linkmissing
+      POSTGRES_USER: linkmissing
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-for-local-demo}
+    ports: ["5432:5432"]
+    volumes: ["linkmissing_pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U linkmissing -d linkmissing"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+  app:
+    build: .
+    environment:
+      LINKMISSING_DATABASE_URL: postgresql+psycopg://linkmissing:${POSTGRES_PASSWORD:-change-me-for-local-demo}@postgres:5432/linkmissing
+    ports: ["8000:8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+volumes:
+  linkmissing_pgdata:

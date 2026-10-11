@@ -1,0 +1,18 @@
+{
+  "benchmark": "linkmissing-local-smoke-v1",
+  "data_type": "synthetic demo records",
+  "generated_new": 0,
+  "returned_candidates": 3,
+  "mean_score": 0.9275,
+  "exclusion_reason_counts": {
+    "SKILL_EVIDENCE_MISSING": 127,
+    "COLLABORATION_NOT_WELCOME": 7,
+    "CLUB_INACTIVE": 7,
+    "DUPLICATE_ACTIVE_PARTNERSHIP": 1,
+    "RESOURCE_UNAVAILABLE": 19,
+    "DUPLICATE_COMPLETED_SCOPE": 1
+  },
+  "precision_at_5": "not computed: no separately frozen complete ground-truth label set in this MVP build",
+  "recall_at_5": "not computed: no separately frozen complete ground-truth label set in this MVP build",
+  "warning": "Do not interpret these values as real-campus recommendation accuracy."
+}
